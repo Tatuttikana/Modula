@@ -1,0 +1,8 @@
+def scrambleList(lista):
+    from random import randint
+    newList = []
+    for i in range(len(lista)):
+        x = randint(0, len(lista) - 1)
+        newList.append(lista[x])
+        lista.remove(lista[x])
+    return newList
